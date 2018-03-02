@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="W3NumberProgressBar">
+        <attr name="progress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="WePageOptionsView">
+        <attr name="wptvShowIcon" format="boolean" />
+        <attr name="wptvText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize" format="dimension"/>
+        <attr name="iconMargin" format="dimension"/>
+        <attr name="iconSrc" format="reference"/>
+        <attr name="duration_max" format="integer"/>
+    </declare-styleable>
+
+</resources>

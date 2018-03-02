@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- base dialog -->
+
+    <!-- progress dialog -->
+		<!-- 对话框黑色遮罩，如果有需求要去掉请加入这个属性<item name="android:backgroundDimEnabled">false</item> -->
+
+
+</resources>

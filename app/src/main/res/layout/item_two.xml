@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/llSub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/coming"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/tvMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/more"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.demo.XImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvLiving"
+                    android:layout_width="38dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="@string/living"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tvReminder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_live_list_tip_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minWidth="@dimen/item_min_width"
+                    android:paddingLeft="@dimen/item_padding"
+                    android:paddingRight="@dimen/item_padding"
+                    android:text="@string/remind"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.demo.XImageView
+                    android:id="@+id/imgView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvLiving2"
+                    android:layout_width="38dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="@string/living"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tvReminder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_live_list_tip_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minWidth="@dimen/item_min_width"
+                    android:paddingLeft="@dimen/item_padding"
+                    android:paddingRight="@dimen/item_padding"
+                    android:text="@string/remind"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llComing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.example.demo.XImageView
+            android:id="@+id/imgViewComing"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleComing"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvTimeComing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tvReminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_live_list_tip_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minWidth="@dimen/item_min_width"
+                    android:paddingLeft="@dimen/item_padding"
+                    android:paddingRight="@dimen/item_padding"
+                    android:text="@string/remind"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

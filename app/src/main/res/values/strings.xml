@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="coming">Coming</string>
+    <string name="more">More</string>
+    <string name="living">Living</string>
+    <string name="remind">Remind</string>
+</resources>
