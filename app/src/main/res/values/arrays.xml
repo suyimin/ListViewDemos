@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="demoNames">
+        <item>Adapter采用单布局</item>
+        <item>Adapter采用多布局</item>
+    </string-array>
+    <string-array name="demoDirects">
+        <item>com.example.demo.SingleActivity</item>
+        <item>com.example.demo.MultiActivity</item>
+    </string-array>
+</resources>
