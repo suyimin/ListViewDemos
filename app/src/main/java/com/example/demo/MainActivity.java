@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.widget.xlistview.XListView;
 
@@ -65,27 +66,27 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
 
     @Override
     public void onItem1Click(View view, int position, long id) {
-
+        Toast.makeText(this, "onItem1Click,position-->" + position + ",id-->" + id + ",str1-->" + mLists.get(position).getStr1(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onItem2Click(View view, int position, long id) {
-
+        Toast.makeText(this, "onItem2Click,position-->" + position + ",id-->" + id + ",str2-->" + mLists.get(position).getStr1(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onRemind1Click(View view, int position, long id) {
-
+        Toast.makeText(this, "onRemind1Click,position-->" + position + ",id-->" + id + ",str1-->" + mLists.get(position).getStr1(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onRemind2Click(View view, int position, long id) {
-
+        Toast.makeText(this, "onRemind2Click,position-->" + position + ",id-->" + id + ",str1-->" + mLists.get(position).getStr2(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onMoreClick(View view, int position, long id) {
-
+        Toast.makeText(this, "onMoreClick,position-->" + position + ",id-->" + id + ",str1-->" + mLists.get(position).getStr1(), Toast.LENGTH_SHORT).show();
     }
 
     @Override

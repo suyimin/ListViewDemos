@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,7 +64,7 @@ class XAdapter extends BaseAdapter {
             holder.tvLiving.setVisibility(View.VISIBLE);
             holder.tvTitle.setText(title);
             holder.tvTime.setText(startTime);
-            holder.ll1.setOnClickListener(new View.OnClickListener() {
+            holder.ll11.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mListener.onItem1Click(holder.ll1, position, position);
