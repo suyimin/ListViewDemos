@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +41,7 @@ class XAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         final ViewHolder holder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_two, null, false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_single, null, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {
