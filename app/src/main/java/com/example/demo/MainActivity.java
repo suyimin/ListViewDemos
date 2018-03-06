@@ -10,12 +10,13 @@ import com.widget.xlistview.XListView;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MainActivity extends Activity implements XAdapter.OnViewClickListener, XListView.IXListViewListener, AdapterView.OnItemClickListener {
+public class MainActivity extends Activity implements XAdapter.OnViewClickListener,
+        XListView.IXListViewListener, AdapterView.OnItemClickListener {
 
     private XListView listView;
     private XAdapter adapter;
     private List<ListBean> mLists = new LinkedList<>();
-    private final int NUM = 50;
+    private final int NUM = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
             String s2 = "X" + i;
             bean.setStr1(s1);
             bean.setStr2(s2);
+            bean.setType(i % 5);
             mLists.add(bean);
         }
     }
@@ -53,6 +55,16 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
 
     @Override
     public void onItem2Click(View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onRemind1Click(View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onRemind2Click(View view, int position, long id) {
 
     }
 

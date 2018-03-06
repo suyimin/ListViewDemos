@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/w3_widget_loading_view_bg_xf5f5f5"
+    android:background="@color/loading_view_bg_xf5f5f5"
     android:layout_width="fill_parent"
     android:layout_height="48dp" >
 
@@ -10,12 +10,12 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/xlistview_footer_hint_textview"
-            android:textColor="@color/w3_widget_loading_view_text_x999999"
+            android:textColor="@color/loading_view_text_x999999"
             android:textSize="12sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/w3_widget_xlistview_footer_hint_normal" />
+            android:text="@string/xlistview_footer_hint_normal" />
     </RelativeLayout>
 
 </LinearLayout>

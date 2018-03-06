@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huawei.it.w3m.widget.R;
+import com.widget.R;
 
 public class XListViewFooter extends LinearLayout {
     public final static int STATE_NORMAL = 0;
@@ -31,7 +31,7 @@ public class XListViewFooter extends LinearLayout {
 
     public XListViewFooter(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mContext =context;
+        mContext = context;
         initView(context);
     }
 
@@ -46,19 +46,19 @@ public class XListViewFooter extends LinearLayout {
         mHintView.setVisibility(View.INVISIBLE);
         if (state == STATE_READY) {
             if (TextUtils.isEmpty(footerReadingStr)) {
-                mHintView.setText(R.string.w3_widget_xlistview_footer_hint_ready);
+                mHintView.setText(R.string.xlistview_footer_hint_ready);
             } else {
                 mHintView.setText(footerReadingStr);
             }
         } else if (state == STATE_LOADING) {
             if (TextUtils.isEmpty(footerLoadingStr)) {
-                mHintView.setText(R.string.w3_widget_xlistview_footer_hint_loading);
+                mHintView.setText(R.string.xlistview_footer_hint_loading);
             } else {
                 mHintView.setText(footerLoadingStr);
             }
         } else {
             if (TextUtils.isEmpty(footerNormalStr)) {
-                mHintView.setText(R.string.w3_widget_xlistview_footer_hint_normal);
+                mHintView.setText(R.string.xlistview_footer_hint_normal);
             } else {
                 mHintView.setText(footerNormalStr);
             }
@@ -129,9 +129,9 @@ public class XListViewFooter extends LinearLayout {
     }
 
     private void initText() {
-        footerLoadingStr = getResources().getString(R.string.w3_widget_xlistview_footer_hint_loading);
-        footerReadingStr = getResources().getString(R.string.w3_widget_xlistview_footer_hint_ready);
-        footerNormalStr = getResources().getString(R.string.w3_widget_xlistview_footer_hint_normal);
+        footerLoadingStr = getResources().getString(R.string.xlistview_footer_hint_loading);
+        footerReadingStr = getResources().getString(R.string.xlistview_footer_hint_ready);
+        footerNormalStr = getResources().getString(R.string.xlistview_footer_hint_normal);
     }
 
 

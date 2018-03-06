@@ -17,7 +17,7 @@ import android.widget.ListView;
 import android.widget.Scroller;
 import android.widget.TextView;
 
-import com.huawei.it.w3m.widget.R;
+import com.widget.R;
 
 public class XListView extends ListView implements OnScrollListener {
 

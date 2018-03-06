@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- 下拉刷新 start -->
-    <string name="w3_widget_xlistview_footer_hint_normal">More</string>
-    <string name="w3_widget_xlistview_footer_hint_ready">Release to load more…</string>
-    <string name="w3_widget_xlistview_footer_hint_loading">Loading…</string>
+    <string name="xlistview_footer_hint_normal">More</string>
+    <string name="xlistview_footer_hint_ready">Release to load more…</string>
+    <string name="xlistview_footer_hint_loading">Loading…</string>
     <string name="xlistview_update_time_just_now">updated: just now</string>
     <string name="xlistview_update_time_minute_ago">updated: %1$sm ago</string>
     <string name="xlistview_update_time_hour_ago">updated: %1$sh ago</string>

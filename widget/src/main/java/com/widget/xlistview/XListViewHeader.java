@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huawei.it.w3m.widget.R;
+import com.widget.R;
 
 import java.util.Date;
 

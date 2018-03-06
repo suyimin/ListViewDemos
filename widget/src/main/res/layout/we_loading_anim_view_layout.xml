@@ -7,7 +7,7 @@
             android:id="@+id/iv_red"
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:background="@drawable/we_loading_view_anim_red_point" />
+            android:background="@drawable/loading_view_anim_red_point" />
 
         <ImageView
             android:id="@+id/iv_yellow"
@@ -15,7 +15,7 @@
             android:layout_toRightOf="@id/iv_red"
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:background="@drawable/we_loading_view_anim_yellow_point" />
+            android:background="@drawable/loading_view_anim_yellow_point" />
 
         <ImageView
             android:id="@+id/iv_blue"
@@ -23,5 +23,5 @@
             android:layout_toRightOf="@id/iv_yellow"
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:background="@drawable/we_loading_view_anim_blue_point" />
+            android:background="@drawable/loading_view_anim_blue_point" />
     </RelativeLayout>

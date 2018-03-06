@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.huawei.it.w3m.widget.R;
+import com.widget.R;
 
 public class XLoadingView extends RelativeLayout {
 
@@ -44,9 +44,9 @@ public class XLoadingView extends RelativeLayout {
         mImgYellowPoint = (ImageView) view.findViewById(R.id.iv_yellow);
         mImgBluePoint = (ImageView) view.findViewById(R.id.iv_blue);
 
-        animationLeft = AnimationUtils.loadAnimation(mContext, R.anim.we_loading_anim_left_point);
-        animationMiddle = AnimationUtils.loadAnimation(mContext, R.anim.we_loading_anim_middle_point);
-        animationRight = AnimationUtils.loadAnimation(mContext, R.anim.we_loading_anim_right_point);
+        animationLeft = AnimationUtils.loadAnimation(mContext, R.anim.loading_anim_left_point);
+        animationMiddle = AnimationUtils.loadAnimation(mContext, R.anim.loading_anim_middle_point);
+        animationRight = AnimationUtils.loadAnimation(mContext, R.anim.loading_anim_right_point);
 
         animationLeft.setAnimationListener(new Animation.AnimationListener() {
             @Override
