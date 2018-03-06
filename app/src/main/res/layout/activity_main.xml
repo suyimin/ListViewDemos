@@ -4,6 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/getting"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size" />
+
     <com.widget.xlistview.XListView
         android:id="@+id/listView"
         android:layout_width="match_parent"

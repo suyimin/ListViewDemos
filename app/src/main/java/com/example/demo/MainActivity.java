@@ -2,8 +2,10 @@ package com.example.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.widget.xlistview.XListView;
 
@@ -14,6 +16,7 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
         XListView.IXListViewListener, AdapterView.OnItemClickListener {
 
     private XListView listView;
+    private TextView tvEmpty;
     private XAdapter adapter;
     private List<ListBean> mLists = new LinkedList<>();
     private final int NUM = 5;
@@ -28,24 +31,36 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
         listView.setXListViewListener(this);
         listView.setOnItemClickListener(this);
         listView.setPullLoadEnable(true);
-        getData();
-        dealDate();
+        tvEmpty = findViewById(R.id.tvEmpty);
+        getData(false);
     }
 
     private void dealDate() {
+        tvEmpty.setVisibility(View.GONE);
         adapter.update(mLists);
+        listView.stopLoadMore();
+        listView.stopRefresh();
     }
 
-    private void getData() {
-        for (int i = 0; i < NUM; i++) {
-            ListBean bean = new ListBean();
-            String s1 = "S" + i;
-            String s2 = "X" + i;
-            bean.setStr1(s1);
-            bean.setStr2(s2);
-            bean.setType(i % 5);
-            mLists.add(bean);
-        }
+    private void getData(final boolean isRefresh) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (isRefresh) {
+                    mLists.clear();
+                }
+                for (int i = 0; i < NUM; i++) {
+                    ListBean bean = new ListBean();
+                    String s1 = "S" + i;
+                    String s2 = "X" + i;
+                    bean.setStr1(s1);
+                    bean.setStr2(s2);
+                    bean.setType(i % 5);
+                    mLists.add(bean);
+                    dealDate();
+                }
+            }
+        }, 2000);
     }
 
     @Override
@@ -75,12 +90,12 @@ public class MainActivity extends Activity implements XAdapter.OnViewClickListen
 
     @Override
     public void onRefresh() {
-
+        getData(true);
     }
 
     @Override
     public void onLoadMore() {
-
+        getData(false);
     }
 
     @Override
